@@ -24,11 +24,24 @@ class Main
         my_pets.add(new pet("cat", "theupernam", 4, 5));
 
         // printing the information my pets
+        for (pet pet_info : my_pets)
+        {
+            pet_info.info();
+        }
+
+        // feeding and playing with pet
+        // first pet
+        my_pets.get(0).fed();
+        my_pets.get(0).play();
+
+        // second pet
+        //first pet
+        my_pets.get(1).fed();
+        my_pets.get(1).play();
 
         for (pet pet_info : my_pets)
         {
-            System.out.println(pet_info.info());
+            pet_info.info();
         }
-
     }
 }

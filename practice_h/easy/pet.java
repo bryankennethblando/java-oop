@@ -23,24 +23,25 @@ public class pet
     {
         if (needToEat(hungerLevel) && petHappy(happinessLevel))
         {
-            System.out.println("\n" + name + " is hungry! and not happy");
+            System.out.println(name + " is hungry! and not happy\n");
         }
         else
         {
-            System.out.println("\n" + name + " is full and happy, good job!");
+            System.out.println(name + " is full and happy, good job!\n");
         }
     }
+
     // methods to increase the happinesslevel and decrease the hungerlevel of their pet
     void fed() { hungerLevel -= 1; }
     void play() { happinessLevel += 1;}
 
     // getters
-    String info()
+    void info()
     {
-        pet_checker();
-        return "Classification: " + classification +
+        System.out.println("Classification: " + classification +
         ", Name: " + name +
         ", Hunger Level: " + hungerLevel +
-        ", Happiness Level: " + happinessLevel;
+        ", Happiness Level: " + happinessLevel);
+        pet_checker();
     }
 }
