@@ -7,9 +7,9 @@ public class mage extends character
     mage (String name, int health) {super(name, health);}
 
     @Override
-    int attack(int enemyHealth)
+    int attack(int target)
     {
-        return attackDamage - enemyHealth;
+        return target - attackDamage;
     }
 
     @Override

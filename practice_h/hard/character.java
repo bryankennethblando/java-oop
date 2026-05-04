@@ -8,7 +8,7 @@ abstract class character
 
     character (String name, int health) {this.name = name; this.health = health;}
 
-    abstract int attack(int enemyHealth);
+    abstract int attack(int target);
 
     // getters
     String getName() {return name;}

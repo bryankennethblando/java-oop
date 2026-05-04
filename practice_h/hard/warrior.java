@@ -7,10 +7,10 @@ public class warrior extends character
     warrior (String name, int health) {super(name, health);}
 
     @Override
-    int attack(int enemyHealth)
-    {
-        return attackDamage - enemyHealth;
-    }
+   int attack(int target)
+   {
+        return target - attackDamage;
+   }
 
     @Override
     void characterInfo()
